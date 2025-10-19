@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from dgllife.model.gnn import GCN
 from einops import rearrange, repeat
 
-class HyMV(nn.Module):
+class CollDTI(nn.Module):
     def __init__(self, **config):
-        super(HyMV, self).__init__()
+        super(CollDTI, self).__init__()
         drug_in_feats = config["DRUG"]["NODE_IN_FEATS"]
         drug_embedding = config["DRUG"]["NODE_IN_EMBEDDING"]
         drug_hidden_feats = config["DRUG"]["HIDDEN_LAYERS"]
